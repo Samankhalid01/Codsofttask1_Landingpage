@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+       nav .logo{
+            margin-right:790px;
+        }
+        nav a:hover {
+    color: #d621eee7; /* Change to the color you prefer on hover */
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-image: url('https://images.app.goo.gl/rLv21PHh8aRqvXLEA'); /* Replace with your image URL */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Styling for the "Services" section */
+        .third {
+            background-color: #f7f7f7;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .third h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .third p {
+            font-size: 18px;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .third img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling for the "Features" section */
+        .second {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .centered {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 0 20px;
+}
+
+
+        .feature {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling for the footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 40px; /* Adjust the logo size as needed */
+            height: 40px; /* Adjust the logo size as needed */
+            margin-right: 10px;
+        }
+/* Add this CSS code to your existing styles */
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px 0;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .second .feature {
+                flex: 1;
+                margin: 10px;
+                padding: 10px;
+            }
+            .second .ff{
+                color:red;
+            }
+         .second.centered{
+            align-content: center;
+         }
+            
+        }
+
+        /* Add this CSS code to your existing styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.contact button {
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Adjust the social media icon colors as needed */
+.social-icons a:hover {
+    color: #d621eee7; /* Change to the color you prefer on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="Logo">
+               
+            </div>
+            <li><a href="#first">HOME</a></li>
+            <li><a href="#second">ABOUT</a></li>
+            <li><a href="#third">SERVICES</a></li>
+            <li><a href="#fourth">CONTACT ME</a></li>
+        </nav>
+        <h1>Welcome to My Landing Page</h1>
+    </header>
+    
+    <div class="container">
+        <section class="first" id="first">
+            <div class="hero">
+                <h1>Discover Our Amazing Footwears</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="https://g.co/kgs/ovYY5y" class="btn">Click here</a>
+            </div>
+        </section>
+        <section class="third" id="third">
+            <div>
+                <h2>Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="https://images.squarespace-cdn.com/content/v1/5939e41c17bffcacc2888056/1566511027254-CVS3IJS9Z03BU0TINPVP/IMG_3329.JPG" alt="Services Image"> <!-- Replace with your image URL -->
+            </div>
+        <section class="second" id="second">
+            <div class="feature">
+                
+                <h2>Sport Shoes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Shoe picture1">
+
+            </div>
+            <div class="feature">
+                <h2>Joggers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2hvZXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="shoe picture2">
+
+            </div>
+            <div class="feature">
+                <h2>Sneakers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="sneakers"
+            </div>
+        </section>
+    </div>
+    
+    </section>
+    <section class="fourth" id="fourth">
+    <footer class="footer">
+        2023 My Landing Page
+        <div class="contact">
+            <input type="text" placeholder="example@gmail.com">
+            <button>Contact Us</button>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
